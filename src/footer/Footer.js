@@ -15,7 +15,6 @@ const Footer = () => {
                 </div>
                 <div className={s.block}>
                     <h4>PRODUCT</h4>
-                    <a href="#">Contact me</a>
                     <a href="#">Web Development</a>
                     <a href="#">Web Design</a>
                 </div>
