@@ -1,14 +1,47 @@
-.skill {
-    width: 250px;
-    background-color: grey;
+* {
+    box-sizing: border-box;
+}
+
+.work {
     display: flex;
+    align-items: center;
+    width: 400px;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    border: 1px solid;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-.icon {
-    background-color: #eeeef5;
-    height: 60px;
-    width: 60px;
+.description {
+    padding: 5px;
 }
+
+.img {
+    width: 100%;
+    background-color: #808080;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgButton {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.imgButton:hover {
+    opacity: .5;
+}
+
+.title {
+    background-color: grey;
+}
+

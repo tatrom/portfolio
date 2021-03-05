@@ -1,4 +1,16 @@
-.header {
-    height: 80px;
-    background-color: #99d0fb;
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
+}
+.nav > a {
+    text-decoration: none;
+}
+
+.nav > a:hover {
+    opacity: .5;
+}
+
+.nav > a:active {
+    transform: scale(1.2);
 }

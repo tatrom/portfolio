@@ -1,12 +1,15 @@
 import React from "react";
-import s from './Skill.module.css'
+import s from './Work.module.css'
 
-export function Skill(props) {
+export function Work(props) {
     return (
-        <div className={s.skill}>
-            <div className={s.icon}></div>
-            <h3>{props.title}</h3>
-            <span className={s.description}>{props.description}</span>
-        </div>
+        <div className={s.work}>
+            <div className={s.img}>
+                <a href={'#'} className={s.imgButton}>Watch</a>
+            </div>
+                <h3 className={s.title}>{props.title}</h3>
+                <span className={s.description}>{props.description}</span>
+            </div>
+
     )
 }
