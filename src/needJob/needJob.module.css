@@ -1,0 +1,8 @@
+import React from "react";
+
+
+export const needJob = () => {
+    return (
+        <div className={s}></div>
+    )
+}
