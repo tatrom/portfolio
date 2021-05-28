@@ -31,11 +31,14 @@
         content: '';
         position: absolute;
         height: 105%;
-        width: 105%;
+        width: 100%;
         border: 5px solid $primaryColor;
         left: 15px;
         top: -15px;
         z-index: -1;
+        @media screen and (max-width: 430px) {
+          width: 80%;
+        }
       }
     }
   }
@@ -71,7 +74,7 @@
   .photo {
     width: 400px;
     height: 600px;
-    background-image: url("../assets/image/photo_2021-05-21_13-57-01.jpg");
+    background-image: url("../assets/image/photo_2021-05-28_17-32-43.jpg");
     background-position: center;
     background-size: cover;
     @media screen and (max-width: 320px) {
@@ -79,7 +82,7 @@
       height: 350px;
       margin: 50px 0;
     }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 510px) {
       width: 300px;
       height: 420px;
       margin: 50px 0;
