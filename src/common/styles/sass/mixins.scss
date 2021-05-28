@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin text($fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+  font-weight: 500;
+}
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin buttonStyles() {
+  display: inline-block;
+  border: 1px solid;
+  font-family: $textFontFamily;
+  background: $bgSecondColor;
+  color: #fff;
+  padding: 5px;
+  transition: 0.5s;
+  animation: fadeIn 0.5s ease-in-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &:focus, &:hover {
+    color: rgb(216, 229, 241);
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);
+    background: linear-gradient(to bottom, #0083B0, $primaryColor);
+    box-shadow: 0 0.5em 0.7em -0.25em #00b3db;
+    transform: translateY(-.3em);
+  }
+}

@@ -1,0 +1,45 @@
+@import '../common/styles/sass/variables';
+
+.footer {
+  min-height: 20vh;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  font-family: $textFontFamily;
+  align-items: center;
+
+  .block {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    font-size: 12px;
+
+    li {
+      list-style-type: none;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+
+  h5 {
+    color: #5c5e5e;
+    font-weight: 400;
+  }
+}

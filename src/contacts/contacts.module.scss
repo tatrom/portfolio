@@ -1,0 +1,59 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.contactsBlock {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bgSecondColor;
+
+  .contactsContainer {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contactsForm {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      min-height: 17em;
+
+      @media screen and (max-width: 800px) {
+        width: 90%;
+      }
+
+      & > * {
+        margin: 10px;
+      }
+
+      .nameInput {
+        margin-top: 30px;
+      }
+
+      .contactsInput {
+        color: #fff;
+        width: 100%;
+        padding: 5px;
+      }
+
+      & > textarea {
+        color: #fff;
+        width: 100%;
+        padding: 5px;
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .formButton {
+        align-self: center;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+

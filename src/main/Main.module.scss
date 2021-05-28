@@ -1,0 +1,93 @@
+@import '../common/styles/sass/variables';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .image {
+      position: relative;
+      z-index: 1;
+      margin: 100px 0;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        label {
+          position: relative;
+          display: inline-block;
+          font-size: 20px;
+          padding-top: 20px;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 105%;
+        width: 105%;
+        border: 5px solid $primaryColor;
+        left: 15px;
+        top: -15px;
+        z-index: -1;
+      }
+    }
+  }
+
+  span {
+    font-size: 24px;
+
+  }
+
+  .particles {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+
+  .text {
+    margin-top: 50px;
+    width: 300px;
+
+    span {
+      font-size: 24px;
+    }
+
+    h1 {
+      color: $primaryColor;
+      font-size: 56px;
+    }
+  }
+
+  .photo {
+    width: 400px;
+    height: 600px;
+    background-image: url("../assets/image/photo_2021-05-21_13-57-01.jpg");
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 320px) {
+      width: 250px;
+      height: 350px;
+      margin: 50px 0;
+    }
+    @media screen and (max-width: 420px) {
+      width: 300px;
+      height: 420px;
+      margin: 50px 0;
+    }
+  }
+}
+
+.image:hover:before {
+  box-shadow: 0 0.2em 1.4em -0.25em $primaryColor;
+  transition: 0.3s;
+}

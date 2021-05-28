@@ -1,0 +1,7 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.button {
+  outline: none;
+  @include buttonStyles();
+}

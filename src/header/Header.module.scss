@@ -1,0 +1,16 @@
+@import '../common/styles/sass/variables';
+
+.header {
+  padding: 35px;
+  background-color: $bgSecondColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  @media screen and (max-device-width: 688px) {
+    justify-content: center;
+  }
+
+}
+

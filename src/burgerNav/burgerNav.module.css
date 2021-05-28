@@ -1,0 +1,58 @@
+.burgerNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  right: 0;
+}
+.burgerNav .burgerNavItems {
+  background: #252527;
+  position: absolute;
+  height: 100vh;
+  padding: 2px;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  transform: translate(0, -100vh);
+  transition: 0.7s;
+  z-index: 1;
+  font-size: 24px;
+}
+.burgerNav .burgerNavItems a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.burgerNav .burgerNavItems a:hover {
+  color: #4e93e6;
+}
+.burgerNav .burgerNavItems a .active {
+  color: #4e93e6;
+}
+.burgerNav .burgerNavItems a :active {
+  transform: scale(1.2);
+}
+.burgerNav .show {
+  transform: translate(0, 0);
+}
+.burgerNav .burgerBtn {
+  width: 30px;
+  height: 30px;
+  background-color: #4e93e6;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+}
+@media screen and (min-width: 521px) {
+  .burgerNav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=burgerNav.module.css.map */
