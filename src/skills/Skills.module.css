@@ -1,0 +1,17 @@
+.skillBlock {
+  min-height: 100vh;
+  background-color: #252527;
+}
+.skillBlock .skillsContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skillBlock .skills {
+  margin-top: 30px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=Skills.module.css.map */

@@ -1,0 +1,92 @@
+.work {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #252527;
+  color: #fff;
+}
+.work:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.work .img {
+  position: relative;
+  width: 100%;
+  background-color: #808080;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.work .img::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+.work .img .imgButton {
+  z-index: 1;
+  display: inline-block;
+  border: 1px solid;
+  font-family: "Poppins", sans-serif;
+  background: #252527;
+  color: #fff;
+  padding: 5px;
+  transition: 0.5s;
+  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 5px;
+  text-decoration: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.work .img .imgButton:focus, .work .img .imgButton:hover {
+  color: #d8e5f1;
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);
+  background: linear-gradient(to bottom, #0083B0, #4e93e6);
+  box-shadow: 0 0.5em 0.7em -0.25em #00b3db;
+  transform: translateY(-0.3em);
+}
+.work .projectInfo {
+  text-align: left;
+  padding: 10px;
+}
+.work .projectInfo .projectTitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.work .projectInfo .description {
+  padding: 5px;
+  font: 400 14px/1.8 "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #fff;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=Work.module.css.map */

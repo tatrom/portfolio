@@ -1,0 +1,31 @@
+.button {
+  outline: none;
+  display: inline-block;
+  border: 1px solid;
+  font-family: "Poppins", sans-serif;
+  background: #252527;
+  color: #fff;
+  padding: 5px;
+  transition: 0.5s;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button:focus, .button:hover {
+  color: #d8e5f1;
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);
+  background: linear-gradient(to bottom, #0083B0, #4e93e6);
+  box-shadow: 0 0.5em 0.7em -0.25em #00b3db;
+  transform: translateY(-0.3em);
+}
+
+/*# sourceMappingURL=CustomButton.module.css.map */

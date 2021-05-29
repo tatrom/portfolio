@@ -1,0 +1,16 @@
+.header {
+  padding: 35px;
+  background-color: #252527;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-device-width: 688px) {
+  .header {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,24 @@
+.worksBlock {
+  background-color: #1f1f20;
+}
+.worksBlock .worksContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+.worksBlock .worksContainer .works {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+@media screen and (max-width: 1129px) {
+  .worksBlock .worksContainer .works {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Works.module.css.map */

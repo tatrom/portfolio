@@ -1,0 +1,9 @@
+.preloader {
+  background-color: #252527;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=contactsContainer.module.css.map */

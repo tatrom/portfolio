@@ -56,9 +56,9 @@ export function Skills() {
                                description={"A cornerstone technology for describing the presentation of a website"}/>
                         <Skill style={react} title={'React'}
                                description={"An up-to-date UI building technology with efficient solutions for almost any scenario"}/>
-                        <Skill style={html} title={'React'}
+                        <Skill style={html} title={'html'}
                                description={"A classic utility to enhance the accessibility"}/>
-                        <Skill style={git} title={'React'}
+                        <Skill style={git} title={'Git'}
                                description={"The speed, data integrity and support for development workflow"}/>
                         <Skill style={redux} title={'Redux'}
                                description={"A heplful state manager to handle business logic"}/>

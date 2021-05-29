@@ -1,0 +1,50 @@
+.contactsBlock {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #252527;
+}
+.contactsBlock .contactsContainer {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactsBlock .contactsContainer .contactsForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 17em;
+}
+@media screen and (max-width: 800px) {
+  .contactsBlock .contactsContainer .contactsForm {
+    width: 90%;
+  }
+}
+.contactsBlock .contactsContainer .contactsForm > * {
+  margin: 10px;
+}
+.contactsBlock .contactsContainer .contactsForm .nameInput {
+  margin-top: 30px;
+}
+.contactsBlock .contactsContainer .contactsForm .contactsInput {
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+}
+.contactsBlock .contactsContainer .contactsForm > textarea {
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  min-height: 100px;
+  resize: vertical;
+}
+.contactsBlock .contactsContainer .contactsForm .formButton {
+  align-self: center;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=contacts.module.css.map */
